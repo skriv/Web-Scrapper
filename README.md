@@ -1,4 +1,4 @@
-# SKRIV Scrapper
+# Web Scrapper
 
 Run the same Python + Next.js + Ollama application locally. No Docker, paid API keys, bundled dependencies or bundled model weights. This package preserves the reviewed extraction logic and all 32 currently saved settings, including **Sonagara for Google Maps**, **Scrapling for websites**, and disabled automatic fallbacks.
 
