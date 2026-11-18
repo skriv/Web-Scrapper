@@ -4,6 +4,14 @@ Run the same Python + Next.js + Ollama application locally. No Docker, paid API 
 
 The English UI streams an editable profile and JSON, first/last/total timing, field discovery sources, locations, and temporary LLM diagnostics. Inputs can be a business website, Google Maps URL or company search query.
 
+
+
+https://github.com/user-attachments/assets/90bb65b2-c7f9-4968-998d-5975aff1a3ce
+
+
+
+
+
 ## Quick start
 
 Install these prerequisites once:
