@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><title>Dental care | Harbor Dental</title>
+<meta name="description" content="A general page description that must not overwrite JSON-LD.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","name":"Wrong website title"},
+ {"@id":"#business","@type":["Dentist","LocalBusiness"],"name":"Harbor Dental","description":"General and cosmetic dentistry.","url":"https://harbor.example/","telephone":"+1 (415) 555-0123","address":{"@id":"#address"},"timeZone":"America/Los_Angeles","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https://schema.org/Monday","Tuesday"],"opens":"09:00:00","closes":"17:00:00"},{"dayOfWeek":"Sunday","opens":"00:00","closes":"00:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Our services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Dental cleaning"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Teeth whitening"}}]},"paymentAccepted":"Cash, Visa; Mastercard"},
+ {"@id":"#address","@type":"PostalAddress","streetAddress":"128 Harbor Street","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94102","addressCountry":{"@type":"Country","name":"US"}}
+]}
+</script></head><body><h1>Harbor Dental</h1><a href="/contact#hours">Contact</a><a href="/services">Services</a><a href="https://different.example/contact">Other site</a><a href="/privacy">Privacy</a></body></html>

@@ -1,0 +1,11 @@
+{
+  "applicationVersion": "2.0.0",
+  "packagedOn": "2026-11-18",
+  "mode": "native",
+  "settingsSha256": "70b47bdcfc7326e4f25f704ffee12742467ca020e7bc957989197467f6fadf05",
+  "sourceManifest": "config/source-integrity.json",
+  "verification": "docs/native-verification.json",
+  "projectName": "SKRIV Scrapper",
+  "sourceUnchanged": false,
+  "applicationLogicUnchanged": true
+}

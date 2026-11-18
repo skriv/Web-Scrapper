@@ -1,0 +1,196 @@
+{
+  "verifiedOn": "2026-11-18",
+  "installation": {
+    "python": "Python 3.13.0",
+    "node": "v22.23.1",
+    "platform": "Darwin",
+    "architecture": "arm64",
+    "gosomVersion": "1.18.2",
+    "gosomSha256": "c166042f5bd00bc8ae48b9e05ab38dc029b55b8613c4d8ad2602b2f4e6b40ff4",
+    "mapsDriver": "1.61.1",
+    "ollama": {
+      "version": "0.40.16",
+      "model": "qwen3:4b",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+    }
+  },
+  "applicationSourceUnchanged": false,
+  "applicationLogicUnchanged": true,
+  "branding": "SKRIV Scrapper",
+  "applicationFilesCompared": 78,
+  "settings": {
+    "valuesCompared": 32,
+    "matchOriginalRunningApp": true,
+    "matchFreshRunningApp": true,
+    "cacheStrategy": "refresh",
+    "noAutomaticFallbackSwitchesChanged": true
+  },
+  "tests": {
+    "backendPassed": 247,
+    "backendSkipped": 3,
+    "frontendPassed": 27,
+    "packagingPassed": 6,
+    "realChromeJsFixturePassed": 1,
+    "typecheck": "passed",
+    "frontendProductionBuild": "passed",
+    "pipCheck": "passed",
+    "gosomChromiumLaunch": "passed",
+    "gosomDriverVersion": "1.61.1",
+    "gosomBrowserVersion": "149.0.7827.55"
+  },
+  "lifecycle": {
+    "setupRepeatedSuccessfully": true,
+    "settingsNotResetBySetup": true,
+    "stopRestartVerified": true,
+    "portsUsed": {
+      "web": 3012,
+      "api": 8012,
+      "maps": 8013
+    }
+  },
+  "liveChecks": {
+    "bevri": {
+      "input": "https://www.google.com/maps/search/?api=1&query=Bevri",
+      "metrics": {
+        "firstFieldMs": 1198,
+        "firstPartialMs": 1198,
+        "totalMs": 4021,
+        "httpRequests": 15,
+        "instrumentedHttpRequests": 15,
+        "pagesVisited": 10,
+        "fieldsExtracted": 9,
+        "completeness": 1.0,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "mapsStatus": "complete",
+      "aiStatus": "skipped",
+      "services": [
+        "Private events and group dining at Bevri",
+        "Private dining, group dining and restaurant buyout",
+        "Takeout",
+        "Delivery"
+      ],
+      "industryCount": 0,
+      "contactFields": {
+        "source": "https://www.bevri.com/",
+        "business_name": "Bevri",
+        "voice_greeting_phrase": "Hello, this is Bevri. How can I help you today?",
+        "full_name": "",
+        "phone_number": "+16506000433",
+        "email": "eat@bevri.com"
+      }
+    },
+    "newo": {
+      "input": "https://newo.ai",
+      "metrics": {
+        "firstFieldMs": 972,
+        "firstPartialMs": 972,
+        "totalMs": 6989,
+        "httpRequests": 14,
+        "instrumentedHttpRequests": 14,
+        "pagesVisited": 10,
+        "fieldsExtracted": 4,
+        "completeness": 0.4444444444444444,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 4825,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "mapsStatus": "error",
+      "aiStatus": "complete",
+      "services": [
+        "Voice AI Employee",
+        "Inbound Voice Calls",
+        "Outbound Voice & SMS",
+        "Instant Callback",
+        "Lead Nurturing Agent",
+        "AI Call Center",
+        "SMS AI Agent",
+        "AI Chat Widget",
+        "Industry solutions for Contact Centers",
+        "Industry solutions for Dental & Orthodontics",
+        "Industry solutions for Restaurants",
+        "Industry solutions for Healthcare",
+        "Industry solutions for Financial Services",
+        "Industry solutions for Home Services",
+        "Industry solutions for Fitness & Wellness",
+        "Industry solutions for Hospitality"
+      ],
+      "industryCount": 8
+    }
+  },
+  "localModelInference": {
+    "kind": "Controlled real-model check from new native environment; not a website benchmark",
+    "input": "Georgian restaurant in downtown Palo Alto.",
+    "services": [
+      "Dining"
+    ],
+    "method": "ollama-inferred",
+    "durationMs": 970,
+    "status": "complete"
+  },
+  "modelProvisioningNote": "Existing local Ollama 0.40.16 server and qwen3:4b weights were reused after digest verification. Missing-model download is supported by setup but the 2.5 GB weights were not downloaded again in this packaging test.",
+  "platformCoverage": {
+    "executed": "macOS Apple Silicon with Rosetta and installed Google Chrome",
+    "notExecuted": [
+      "Linux x86-64",
+      "Windows WSL2",
+      "macOS Intel"
+    ]
+  },
+  "publication": "No GitHub repository, push or release was created.",
+  "brandingVerification": {
+    "sourceFiles": 78,
+    "brandingOnlyFiles": [
+      "backend/app/browser_worker.py",
+      "backend/app/main.py",
+      "frontend/app/layout.tsx",
+      "frontend/components/scraping-panel.tsx",
+      "frontend/components/profile-editor.tsx"
+    ],
+    "markdownDocumentsIndexed": 13,
+    "localLinksValid": 55,
+    "projectName": "SKRIV Scrapper",
+    "frontendTestsPassed": 27,
+    "frontendTypecheck": "passed",
+    "nativePackagingTestsPassed": 6,
+    "livePages": [
+      {
+        "port": 3002,
+        "path": "/",
+        "title": "SKRIV Scrapper \u2014 Business profile",
+        "status": 200
+      },
+      {
+        "port": 3002,
+        "path": "/settings/scraping",
+        "title": "SKRIV Scrapper \u2014 Business profile",
+        "status": 200
+      },
+      {
+        "port": 3012,
+        "path": "/",
+        "title": "SKRIV Scrapper \u2014 Business profile",
+        "status": 200
+      },
+      {
+        "port": 3012,
+        "path": "/settings/scraping",
+        "title": "SKRIV Scrapper \u2014 Business profile",
+        "status": 200
+      }
+    ],
+    "settingsChanged": false,
+    "extractionLogicChanged": false,
+    "scope": "Branding, documentation index and archive naming only; original full-suite and extraction timings remain historical."
+  }
+}

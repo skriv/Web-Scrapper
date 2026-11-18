@@ -1,0 +1,166 @@
+{
+  "hardware": "Apple Silicon macOS, 64 GiB RAM, native Ollama/Metal for inference; measurements precede native packaging.",
+  "methodology": "Historical real runs, not a statistical ranking. Application cache bypass; OS/DNS/upstream caches not cleared. Direct-provider and full-pipeline rows are separate.",
+  "providers": [
+    {
+      "provider": "Sonagara",
+      "metrics": {
+        "firstFieldMs": 1159,
+        "firstPartialMs": 1159,
+        "totalMs": 1159,
+        "httpRequests": 1,
+        "instrumentedHttpRequests": 1,
+        "pagesVisited": 0,
+        "fieldsExtracted": 6,
+        "completeness": 0.6666666666666666,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "kind": "single historical diagnostic, not current automatic routing"
+    },
+    {
+      "provider": "Gosom",
+      "metrics": {
+        "firstFieldMs": 17756,
+        "firstPartialMs": 17756,
+        "totalMs": 17757,
+        "httpRequests": null,
+        "instrumentedHttpRequests": 0,
+        "pagesVisited": 0,
+        "fieldsExtracted": 7,
+        "completeness": 0.7777777777777778,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "kind": "single historical diagnostic, not current automatic routing"
+    },
+    {
+      "provider": "Playwright",
+      "metrics": {
+        "firstFieldMs": 4144,
+        "firstPartialMs": 4144,
+        "totalMs": 4144,
+        "httpRequests": 69,
+        "instrumentedHttpRequests": 69,
+        "pagesVisited": 1,
+        "fieldsExtracted": 7,
+        "completeness": 0.7777777777777778,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "kind": "single historical diagnostic, not current automatic routing"
+    },
+    {
+      "provider": "Crawl4AI",
+      "metrics": {
+        "firstFieldMs": 5162,
+        "firstPartialMs": 5162,
+        "totalMs": 5163,
+        "httpRequests": 73,
+        "instrumentedHttpRequests": 73,
+        "pagesVisited": 1,
+        "fieldsExtracted": 7,
+        "completeness": 0.7777777777777778,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "kind": "single historical diagnostic, not current automatic routing"
+    }
+  ],
+  "pipelines": [
+    {
+      "name": "Bevri Maps selective AI before",
+      "metrics": {
+        "firstFieldMs": 875,
+        "firstPartialMs": 875,
+        "totalMs": 15308,
+        "httpRequests": 15,
+        "instrumentedHttpRequests": 15,
+        "pagesVisited": 10,
+        "fieldsExtracted": 9,
+        "completeness": 1.0,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 12297,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "aiStatus": "complete"
+    },
+    {
+      "name": "Bevri Maps selective AI after",
+      "metrics": {
+        "firstFieldMs": 1721,
+        "firstPartialMs": 1721,
+        "totalMs": 5090,
+        "httpRequests": 15,
+        "instrumentedHttpRequests": 15,
+        "pagesVisited": 10,
+        "fieldsExtracted": 9,
+        "completeness": 1.0,
+        "success": true,
+        "fallbacks": 0,
+        "retries": 0,
+        "cache": "bypass",
+        "ollamaMs": 0,
+        "peakMemoryBytes": null,
+        "memoryNote": "Per-job peak RSS is unavailable in the shared process."
+      },
+      "aiStatus": "skipped"
+    }
+  ],
+  "websiteComparison": {
+    "input": "https://bevri.com",
+    "summary": [
+      {
+        "provider": "scrapling",
+        "runs": 2,
+        "medianMs": 1390.0,
+        "p90Ms": 1463.6,
+        "p95Ms": 1472.8,
+        "successRate": 1.0,
+        "averageCompleteness": 0.7777777777777778
+      },
+      {
+        "provider": "crawl4ai",
+        "runs": 2,
+        "medianMs": 4450.0,
+        "p90Ms": 4494.0,
+        "p95Ms": 4499.5,
+        "successRate": 1.0,
+        "averageCompleteness": 0.7777777777777778
+      }
+    ],
+    "methodology": "Real sequential requests, rotated order. Percentiles use linear interpolation, include failed-run durations. Small samples are descriptive, not evidence of an engine speed ranking.",
+    "cachePolicy": "Application cache bypassed for all single-engine comparisons. OS/DNS/upstream/browser caches are not flushed; first observed round is not a guaranteed cold machine."
+  },
+  "servicesInference": {
+    "kind": "Controlled test: Services blank; published Bevri description excerpt supplied",
+    "durationMs": 1473,
+    "values": [
+      "Dining"
+    ]
+  }
+}

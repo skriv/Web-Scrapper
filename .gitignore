@@ -1,0 +1,17 @@
+.env*
+!.env.example
+.venv/
+.runtime/
+data/
+node_modules/
+.next/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+*.sqlite3
+*.sqlite3-*
+*.log
+coverage/
+.DS_Store
+benchmark-results*.json
